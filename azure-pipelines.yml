@@ -1,3 +1,5 @@
+#This is a complete Azure Pipeline build
+
 trigger:
 - '*'
 
@@ -126,3 +128,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
